@@ -16,7 +16,20 @@ export default class HelloWorldApp extends Component {
            <View>
              <Image source={pic} style={{width: 193, height: 110}} />
            </View>
+           <View>
+             <ZdyText userName="Xiao ming"/>
+           </View>
         </View> 
     );
+  }
+}
+
+class ZdyText extends Component{
+  render() {
+    return (
+      <View style ={{alignItems:"center"}}>
+        <Text>Hello! {this.props.userName}, Good Morning.</Text>
+      </View>
+    )
   }
 }
