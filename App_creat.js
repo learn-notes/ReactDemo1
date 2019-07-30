@@ -1,11 +1,7 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
+ /**
+  * Sample React Native App
+  */
+ 
 import React, {Fragment} from 'react';
 import {
   SafeAreaView,

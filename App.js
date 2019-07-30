@@ -1,35 +1,30 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-import { Image } from 'react-native';
+import { View, TextInput, Text } from 'react-native';
 
-
+/**
+ * 输入文本
+ */
 export default class HelloWorldApp extends Component {
-  render() {
-	  let pic = {
-      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
-    };
-    return (
-        <View style={{alignItems:"center"}}>
-          <View>
-            <Text>Hello, world!</Text>
-          </View>
-           <View>
-             <Image source={pic} style={{width: 193, height: 110}} />
-           </View>
-           <View>
-             <ZdyText userName="Xiao ming"/>
-           </View>
-        </View> 
-    );
+  constructor(props) {
+    super(props);
+    this.state = { text: '' }
   }
-}
 
-class ZdyText extends Component{
   render() {
     return (
-      <View style ={{alignItems:"center"}}>
-        <Text>Hello! {this.props.userName}, Good Morning.</Text>
+      <View style={{ padding: 10 }}>
+        <TextInput
+          style={{ fontSize:30 }}
+          placeholder='请输入内容'
+          placeholderTextColor='red'
+          value={this.state.text}
+          onChangeText={(text) => this.setState({ text })}
+        />
+        <Text style={{padding: 10, fontSize: 42}}>
+          {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
+        </Text>
+
       </View>
-    )
+    );
   }
 }
