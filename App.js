@@ -1,57 +1,22 @@
 import React, { Component } from 'react';
-import { Alert, Button, StyleSheet, View } from 'react-native';
+import DetailsScreen from "./src/pages/DetailsPage"
+import HomeScreen from "./src/pages/HomePage"
+import { createAppContainer, createStackNavigator, StackActions, NavigationActions } from 'react-navigation';
 
-/**
- * 按钮使用
- */
-export default class HelloWorldApp extends Component {
-  _onPressButton() {
-    Alert.alert('You tapped the button!')
-  }
+const AppNavigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Details: DetailsScreen,
+  },
+  {
+    initialRouteName: 'Home',
+  },
+);
 
+const AppContainer = createAppContainer(AppNavigator);
+
+export default class App extends React.Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="Press Me"
-          />
-        </View>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="Press Me"
-            color="#841584"
-          />
-        </View>
-        <View style={styles.alternativeLayoutButtonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="This looks great!"
-          />
-          <Button
-            onPress={this._onPressButton}
-            title="OK!"
-            color="#841584"
-          />
-        </View>
-      </View>
-    );
+    return <AppContainer />;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-   flex: 1,
-   justifyContent: 'center',
-  },
-  buttonContainer: {
-    margin: 20
-  },
-  alternativeLayoutButtonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  }
-});
