@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
-import HomeScreen from "./src/pages/HomePage"
-import ButtonScreen from "./src/pages/Demo_Button"
-import ScrowViewScreen from "./src/pages/Demo_ScrowView"
-import ListScreen from "./src/pages/Demo_List"
-import LayoutScreen from "./src/pages/Demo_layout"
-import InputTextScreen from "./src/pages/Demo_InputText"
-import TextScreen from "./src/pages/Demo_Text"
-import Example from "./src/pages/Demo_Example"
+
+import MainScreen from "./src/pages/MainPage"
+
+import DocBaseScreen from "./src/pages/DocBasePage"
+import ButtonScreen from "./src/pages/docbase/Demo_Button"
+import ScrowViewScreen from "./src/pages/docbase/Demo_ScrowView"
+import ListScreen from "./src/pages/docbase/Demo_List"
+import LayoutScreen from "./src/pages/docbase/Demo_layout"
+import InputTextScreen from "./src/pages/docbase/Demo_InputText"
+import TextScreen from "./src/pages/docbase/Demo_Text"
+import Example from "./src/pages/docbase/Demo_Example"
+
+import ComponentScreen from "./src/pages/ComponentPage"
+import CompnViewScreen from "./src/pages/compn/Compn_View"
+
+import PlatformScreen from "./src/pages/PlatformPage"
+import PlatOsScreen from "./src/pages/platform/Plat_OS"
+import PlatVersionScreen from "./src/pages/platform/Plat_Version"
+import PlatFileScreen from "./src/pages/platform/Plat_Flie"
+
+
 import { createAppContainer, createStackNavigator, StackActions, NavigationActions } from 'react-navigation';
 
 const AppNavigator = createStackNavigator(
   {
-    Home: HomeScreen,
+    // 首页
+    Main: MainScreen,
+
+    // 官方文档-基础部分
+    HomeBase: DocBaseScreen,
     Button: ButtonScreen,
     ScrowView: ScrowViewScreen,
     List: ListScreen,
@@ -19,9 +36,20 @@ const AppNavigator = createStackNavigator(
     InputText: InputTextScreen,
     Text: TextScreen,
     Example: Example,
+
+    // 官方文档-组件和API
+    Component: ComponentScreen,
+    CompnViewScreen: CompnViewScreen,
+
+    // 官方文档-特定平台
+    PlatformScreen: PlatformScreen,
+    PlatOsScreen: PlatOsScreen,
+    PlatVersionScreen: PlatVersionScreen,
+    PlatFileScreen: PlatFileScreen,
+
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Main',
   },
 );
 
