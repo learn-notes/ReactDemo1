@@ -20,7 +20,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App = () => {
+const Example = () => {
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
@@ -107,4 +107,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Example;

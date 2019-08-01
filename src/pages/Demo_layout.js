@@ -4,11 +4,15 @@ import { View } from 'react-native';
 /**
  * 水平、垂直布局，权重等
  */
-export default class HelloWorldApp extends Component {
+export default class LayoutScreen extends Component {
+
+  static navigationOptions = {
+    title: '布局结构',
+  };
+
   render() {
     return (
       <View style={{ flex: 1, flexDirection: 'column' }}>
-
         {/* 从左到右  */}
         <View style={{ flexDirection: 'row' }}>
           <View style={{ width: 50, height: 50, backgroundColor: 'powderblue' }} />

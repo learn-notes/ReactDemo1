@@ -4,7 +4,11 @@ import { View, FlatList, StyleSheet, SectionList, Text } from 'react-native';
 /**
  * ListView的使用
  */
-export default class HelloWorldApp extends Component {
+export default class ListScreen extends Component {
+
+  static navigationOptions = {
+    title:"ListView的使用"
+  }
 
   render() {
     return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text,Image, View } from 'react-native';
+import { StyleSheet, Text, Image, View } from 'react-native';
 import { yellow } from 'ansi-colors';
 
 /**
@@ -19,7 +19,12 @@ const styles = StyleSheet.create(
 );
 
 
-export default class HelloWorldApp extends Component {
+export default class TextScreen extends Component {
+
+  static navigationOptions = {
+    title: '文本图片',
+  };
+
   render() {
     let pic = {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'

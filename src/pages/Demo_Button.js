@@ -4,7 +4,12 @@ import { Alert, Button, StyleSheet, View } from 'react-native';
 /**
  * 按钮使用
  */
-export default class HelloWorldApp extends Component {
+export default class ButtonScreen extends Component {
+
+  static navigationOptions = {
+    title: '按钮使用',
+  };
+
   _onPressButton() {
     Alert.alert('You tapped the button!')
   }
@@ -43,8 +48,8 @@ export default class HelloWorldApp extends Component {
 
 const styles = StyleSheet.create({
   container: {
-   flex: 1,
-   justifyContent: 'center',
+    flex: 1,
+    justifyContent: 'center',
   },
   buttonContainer: {
     margin: 20

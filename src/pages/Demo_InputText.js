@@ -4,7 +4,12 @@ import { View, TextInput, Text } from 'react-native';
 /**
  * 输入文本
  */
-export default class HelloWorldApp extends Component {
+export default class InputTextScreen extends Component {
+
+  static navigationOptions = {
+    title: '输入文本',
+  };
+
   constructor(props) {
     super(props);
     this.state = { text: '' }

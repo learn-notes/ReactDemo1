@@ -4,7 +4,11 @@ import { ScrollView, Image, Text } from 'react-native';
 /**
  * ScrowView的使用
  */
-export default class HelloWorldApp extends Component {
+export default class ScrowViewScreen extends Component {
+  
+  static navigationOptions = {
+    title: 'ScrowView的使用',
+  };
 
   render() {
     return (
