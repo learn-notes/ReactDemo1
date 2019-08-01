@@ -19,6 +19,10 @@ import PlatOsScreen from "./src/pages/platform/Plat_OS"
 import PlatVersionScreen from "./src/pages/platform/Plat_Version"
 import PlatFileScreen from "./src/pages/platform/Plat_Flie"
 
+import AssetsScreen from "./src/pages/AssetsPage"
+
+import AnimateScreen from "./src/pages/AnimatePage"
+
 
 import { createAppContainer, createStackNavigator, StackActions, NavigationActions } from 'react-navigation';
 
@@ -46,6 +50,12 @@ const AppNavigator = createStackNavigator(
     PlatOsScreen: PlatOsScreen,
     PlatVersionScreen: PlatVersionScreen,
     PlatFileScreen: PlatFileScreen,
+
+    // asset资源
+    AssetsScreen: AssetsScreen,
+
+    // 动画
+    AnimateScreen: AnimateScreen,
 
   },
   {

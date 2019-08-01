@@ -14,8 +14,7 @@ export default class PlatFileScreen extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.platform1Container}>
-                {/* 在 iOS 上，Version属性是-[UIDevice systemVersion]的返回值，具体形式为一个表示当前系统版本的字符串。比如可能是"10.3"。 */}
-                    <Text style={{ fontSize: 16, color: 'white' }}>当前系统版本：{parseInt(Platform.Version, 0)} （{Platform.OS}）</Text>
+                    <Text style={{ fontSize: 16, color: 'white' }}>IOS平台专属页面</Text>
                 </View>
             </View>
         );
@@ -31,7 +30,15 @@ const styles = StyleSheet.create({
     platform1Container: {
         flex: 1,
         backgroundColor: 'black',
-        padding: 10
+        padding: 10,
+        ...Platform.select({
+            ios: {
+                backgroundColor: "red"
+            },
+            android: {
+                backgroundColor: "black"
+            }
+        })
     },
 
 });

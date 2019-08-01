@@ -43,15 +43,15 @@ export default class MainScreen extends Component {
 
                 <View style={styles.buttonContainer}>
                     <Button
-                        title=""
-                        // onPress={() => this.props.navigation.push('Layout')}
+                        title="Assets资源"
+                        onPress={() => this.props.navigation.push('AssetsScreen')}
                     />
                 </View>
 
                 <View style={styles.buttonContainer}>
                     <Button
-                        title=""
-                        // onPress={() => this.props.navigation.push('InputText')}
+                        title="动画"
+                        onPress={() => this.props.navigation.push('AnimateScreen')}
                     />
                 </View>
 
