@@ -13,6 +13,7 @@ import Example from "./src/pages/docbase/Demo_Example"
 
 import ComponentScreen from "./src/pages/ComponentPage"
 import CompnViewScreen from "./src/pages/compn/Compn_View"
+import CompnInputScreen from "./src/pages/compn/Compn_input"
 
 import PlatformScreen from "./src/pages/PlatformPage"
 import PlatOsScreen from "./src/pages/platform/Plat_OS"
@@ -44,6 +45,7 @@ const AppNavigator = createStackNavigator(
     // 官方文档-组件和API
     Component: ComponentScreen,
     CompnViewScreen: CompnViewScreen,
+    CompnInputScreen: CompnInputScreen,
 
     // 官方文档-特定平台
     PlatformScreen: PlatformScreen,

@@ -30,7 +30,7 @@ export default class ComponentScreen extends Component {
                 <View style={styles.buttonContainer}>
                     <Button
                         title="Compn_"
-                        // onPress={() => this.props.navigation.push('ScrowView')}
+                        onPress={() => this.props.navigation.push('CompnInputScreen')}
                     />
                 </View>
 
