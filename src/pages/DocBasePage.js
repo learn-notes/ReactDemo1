@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, StyleSheet, Text } from 'react-native';
+import { Button, View, StyleSheet, ScrollView } from 'react-native';
 
 /**
  * 官方文档-基础
@@ -19,7 +19,7 @@ export default class DocBaseScreen extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <ScrollView >
                 <View style={styles.buttonContainer}>
                     <Button
                         title="Base_Button"
@@ -69,7 +69,7 @@ export default class DocBaseScreen extends Component {
                     />
                 </View>
 
-            </View>
+            </ScrollView>
         );
     }
 }
@@ -81,6 +81,6 @@ const styles = StyleSheet.create({
         alignItems: 'stretch'
     },
     buttonContainer: {
-        margin: 10
+        margin: 10,
     },
 });

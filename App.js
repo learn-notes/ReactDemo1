@@ -14,6 +14,8 @@ import Example from "./src/pages/docbase/Demo_Example"
 import ComponentScreen from "./src/pages/ComponentPage"
 import CompnViewScreen from "./src/pages/compn/Compn_View"
 import CompnInputScreen from "./src/pages/compn/Compn_input"
+import ActivityIndicatorScreen from "./src/pages/compn/Compn_ActivityIndicator"
+import CompnButtonScreen from "./src/pages/compn/Compn_Button"
 
 import PlatformScreen from "./src/pages/PlatformPage"
 import PlatOsScreen from "./src/pages/platform/Plat_OS"
@@ -46,6 +48,9 @@ const AppNavigator = createStackNavigator(
     Component: ComponentScreen,
     CompnViewScreen: CompnViewScreen,
     CompnInputScreen: CompnInputScreen,
+    ActivityIndicatorScreen: ActivityIndicatorScreen,
+    CompnButtonScreen: CompnButtonScreen,
+
 
     // 官方文档-特定平台
     PlatformScreen: PlatformScreen,

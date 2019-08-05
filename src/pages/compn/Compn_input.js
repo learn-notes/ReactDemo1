@@ -13,9 +13,7 @@ export default class CompnInputScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.Child1Container} />
-                <View style={styles.Child2Container} />
-                <Text>Hello World!</Text>
+                <Text>暂未填充!</Text>
             </View>
         );
     }

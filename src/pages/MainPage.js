@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, StyleSheet, Text } from 'react-native';
+import { Button, View, StyleSheet, ScrollView } from 'react-native';
 
 /**
  * 首页
@@ -19,7 +19,7 @@ export default class MainScreen extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <ScrollView >
                 <View style={styles.buttonContainer}>
                     <Button
                         title="基础模块"
@@ -55,7 +55,7 @@ export default class MainScreen extends Component {
                     />
                 </View>
 
-            </View>
+            </ScrollView>
         );
     }
 }

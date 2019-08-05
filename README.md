@@ -22,3 +22,11 @@ ReactNative框架实现 hello world
 6.运行项目
 > cd AwesomeProject
 > react-native run-android
+
+---
+
+#### 开发者选项
+
+ReactNative为了开发者实时调试，提供了开发者选项，可通过摇动设备打开，然后点击 `Enable Live Reload` 开启实时更新加载；点击 `Enable Hot Reloading` 开启热更新加载
+开启之后，无需在每次进行更改时重新编译应用程序，都可以立即重新加载应用程序代码。
+在正式包中该功能禁用。
